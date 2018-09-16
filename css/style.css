@@ -1,0 +1,185 @@
+/* Custom stylesheet */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Button override */
+.btn-warning {
+    border-radius: 0;
+    font-size: 15px;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Hero */
+.hero {
+  background: url('../img/night-sky.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hero > #hero-text, h1 {
+  color: #fff;
+  margin-top: -70px;
+}
+
+.hero > #hero-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.hero a{
+  color: #fff;
+}
+
+/* Navigation menu */
+.custom-Navigation {
+  background: black;
+  height: 70px;
+  width: 100%;
+  z-index: 99999999;
+  background: transparent;
+}
+
+.custom-Navigation #logo {
+    color: #fff;
+    padding: 20px 0 0 25px;
+    font-size: 24px;
+}
+
+.custom-Navigation #links, #logo {
+  display: inline-block;
+}
+
+.custom-Navigation #links {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 25px 0 0;
+}
+
+.custom-Navigation #links > li {
+  display: inline-block;
+  color: #fff;
+  padding-right: 15px;
+}
+
+.custom-Navigation #links.visible > li {
+  display: block;
+  padding-right: 0px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.custom-Navigation > #links.visible{
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Icon row */
+#iconRow {
+  padding: 60px 0
+}
+
+/* Pics */
+#pics .overlay{
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#pics > #toronto, #ny
+{
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 450px;
+  color: #fff;
+}
+
+#ny {
+  background: url('../img/ny.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+#toronto {
+  background: url('../img/toronto.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* Footer */
+#footer {
+  background: black;
+  padding: 20px;
+  color: #fff;
+}
+
+#footer h4 {
+  font-size: 16px;
+}
+
+/* Media queries */
+@media (max-width: 767px){
+  /* Mobile Nav */
+  #hamburger, #close {
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px 25px;
+      z-index: 99999999;
+  }
+
+  #close {
+    display: none;
+  }
+
+  .custom-Navigation > #links {
+    display: none;
+    padding: 0;
+  }
+
+  .hero > #hero-text, h1 {
+    font-size: 24px;
+  }
+
+  .sm-dev-padding{
+    padding-top: 60px;
+  }
+
+  #pics > #toronto, #ny
+  {
+    display: block;
+    width: 100%;
+  }
+}
